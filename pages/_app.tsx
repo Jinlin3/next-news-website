@@ -11,9 +11,9 @@ const inter = Inter({ subsets: ['latin'] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={inter.className}>
-      <Head>
+      <Head key="title">
         <title>NextJS News App</title>
-        <meta name="description" content="The Most Relevant News" />
+        <meta name="description" key="description" content="The Most Relevant News" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
